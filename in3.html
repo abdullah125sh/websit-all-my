@@ -1,0 +1,104 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+      .container {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        justify-self: center;
+        /* border: 1px solid; */
+        height: 800px;
+        box-sizing: border-box;
+      }
+      h1 {
+        height: 200px;
+        width: 200px;
+        color: rgb(12, 121, 56);
+        border: 1px solid rgb(12, 121, 56);
+        border-radius: 50%;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        text-align: center;
+        padding-top: 100px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 0px;
+        animation-name: bounce;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+      h1:hover{
+        color: aqua;
+        border: 4px solid aqua;
+      }
+
+      @keyframes bounce {
+        from {
+          position: relative;
+          top: -150px;
+        }
+        to {
+          position: relative;
+          /* justify-items: top; */
+          top: 50px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+            rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+          background-color: red;
+          color: aliceblue;
+        }
+      }
+      .upper{
+    width: 100%;
+    height: 60px;
+    border: 2px solid black;
+    font-size: 20px;
+   }
+   .upper ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   }
+
+   .upper ul li a:hover{
+    color: aqua;
+    transition: 0.5s;
+   }
+   .upper ul li{
+    list-style: none;
+   }
+   .upper ul li a{
+    text-decoration: none;
+    color: white;
+   }
+   .upper ul h3{
+    color:gray;
+   }
+   .upper ul h3 span{
+    color: red;
+   }
+    </style>
+  </head>
+  <body>
+    <div class="upper">
+
+      <ul>
+          <li><a href="in2.html">HOME</a></li>
+          <li><a href="in.html">ABOUT US </a></li>
+          <li><a href="in4.html">SIKLL</a></li>
+      </ul>
+          </div>
+    <div class="container">
+      <h1>you are logined
+      </h1>
+      
+    </div>
+  
+
+</body></html>
